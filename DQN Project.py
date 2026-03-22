@@ -12,15 +12,15 @@ import matplotlib.pyplot as plt
 
 # --- Hyperparameters ---
 ENV_NAME = "CartPole-v1"
-LEARNING_RATE = 2e-4    # Matches Reference Blog Text
-GAMMA = 0.99            # Discount Factor
+LEARNING_RATE = 2e-4    
+GAMMA = 0.99            
 HIDDEN_SIZE = 64        # Network Size
 BUFFER_SIZE = 10000     # Replay Buffer
 BATCH_SIZE = 64
 EPSILON_START = 1.0
 EPSILON_END = 0.01
 EPSILON_DECAY = 0.995
-TARGET_UPDATE = 10      # Update target network every 10 episodes
+TARGET_UPDATE = 10      
 
 # --- Device Config ---
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
